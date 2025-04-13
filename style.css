@@ -1,8 +1,8 @@
 body {
     font-family: Helvetica;
     text-align: center;
-    color: #fff;/*white ou branco em heximadecimal */
-    background-color: #333;
+    color: #b88f8f;/*white ou branco em heximadecimal */
+    background-color: #ffffff;
     padding: 0;
     margin: 0;
 }
@@ -10,13 +10,14 @@ body {
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    border-bottom:  1px solid #666;
+    padding: 30px;
+    border-bottom:  1px solid #9e0d0d;
 }
 nav ul{
     display: flex;
     align-items: center;
     list-style:  none;
+    
 }
 
 ul li{
@@ -24,7 +25,7 @@ ul li{
 }
 ul li a{
     text-decoration:  none;
-    color: #fff;
+    color: rgb(224, 14, 14);
     padding:  5px 10px;
     border-radius:  5px;
     transition:  background-color 0.3s;
@@ -41,7 +42,15 @@ footer{
     border-top:  1px solid #666;
     padding:  20px;
     margin-top: 20px ;
+    color: black;
 }
+nav h2{
+    font-size:  20px;
+    color: red;
+    margin: 0;
+    font-size: 50px;
+}
+
 /* 
     Esse é um exemplo de um comentário em CSS.
     Você pode usar comentários para explicar o código ou descrever o que ele faz.
