@@ -1,0 +1,52 @@
+/* Sletor{
+REGRA: VALOR;
+REGRA2:VALOR;
+} */
+
+
+
+h1{
+    color: red;
+}
+
+/* 2- seletores de elementos */
+p{
+    font-size: 30px;
+}
+/*  tag - seleciona todas as tags 
+    Classe - grupo de elementos seletos
+    id - elemento unico, usa a # e o id em seguida */
+.destaque{
+    background-color: blueviolet;
+}
+/* 1 id der cada id por pagina, 
+ se eu usei um id, eu não uso mais ele */
+ #unico{
+    font-size: 20px;
+    color: blue;
+ }
+ /* "força de seletor"
+ inline > id > classe > tag. */
+
+ .container .texto{
+    color: green;
+ }
+
+/* tres propriedades de texto  e fonte*/
+.fonte{
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 2;
+}
+.texto-cor{
+    color: #a1a1a1;
+}
+.alinhamento{
+    text-align: center;
+}
+.decoracao{
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
