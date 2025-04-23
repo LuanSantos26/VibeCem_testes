@@ -50,3 +50,168 @@ p{
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+
+/* 4 - cores de background */
+.cor-nome{
+    color: yellowgreen;
+}
+/*letra: A e F *
+ *numero: 0 e 9 */
+.cor-hex{
+    color: #9ab13e;
+}
+/* cor rgb */
+.cor-rgb{
+    color: rgb(120, 50, 10);
+}
+/* hue, saturation e brightness */
+.cor-hsl{
+    color: hsl(200, 10%, 50%);
+}
+.background-cor{
+    background-color: #123abc;
+    color: #fff;
+}
+.background-imagem{
+    background-image: url("https://via.placeholder.com/300");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid red;
+}
+/* 5 - box model */
+/* margin: distancia entre os elementos, espaçamentos externo
+   padding: distancia entre o conteudo e a borda do elemento, espaçamento interno
+   border: borda do elemento em volta
+   conteudo: largura e altura (width e height) */
+.box-model{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: #f0f0f0;
+    box-sizing: border-box; /* faz com que a largura e altura sejam contadas com o padding e border */
+}
+/* 6 - display */
+.block{
+    background-color: #333;
+}
+.inline{
+    display: inline; /* o elemento não quebra a linha, mas ocupa o espaço do elemento */
+    background-color: red;
+}
+.inline-block{
+    display: inline-block; /* o elemento não quebra a linha, mas ocupa o espaço do elemento */
+    background-color: blue;
+}
+.none {
+    display: none; /* o elemento não aparece na tela e não ocupa espaço */
+}
+.float-esquerda{
+    float: left; /* o elemento flutua para a esquerda */
+}
+.float_direita{
+    float: right; /* o elemento flutua para a direita */
+}
+.clear{
+    clear: both; /* limpa os floats, ou seja, o elemento não flutua mais */
+}
+/* 7- poscionamentos */
+/* static: padrão, o elemento é posicionado de acordo com o fluxo do documento
+   relative: o elemento é posicionado em relação a sua posição original
+   absolute: o elemento é posicionado em relação ao seu pai mais próximo que tenha position diferente de static
+   fixed: o elemento é posicionado em relação a janela do navegador, ou seja, ele não se move quando a página rola
+   sticky: o elemento é posicionado em relação ao seu pai mais próximo que tenha position diferente de static, mas ele fica fixo quando chega na parte superior da tela */
+   .relativo{
+    position: relative; /* o elemento é posicionado em relação a sua posição original */
+    left: 50px; /* o elemento é movido 50px para a direita */
+    top: 100px; /* o elemento é movido 100px para baixo */
+   }
+   .posicionamento{
+    position: relative; /* o elemento é posicionado em relação a sua posição original */
+    border: 1px solid blue;
+    height: 1000px;
+   }
+   .absoluto{
+    position: absolute; 
+    right: 120px;
+    top: 30px;
+    background-color: purple;
+   }
+   .fixo{
+    background-color: green;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+   }
+   .sticky{
+    position: sticky;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    background-color: aqua;
+   }
+   .z-index-container{
+    position: relative;
+   }
+   .caixa1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 2; /* o elemento fica acima dos outros elementos com z-index menor */
+   }
+   .caixa2{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: green;
+    z-index: 1; /* o elemento fica abaixo dos outros elementos com z-index maior */
+   }
+   /*8 - Responsividade */
+   .responsivo{
+    background-color: #d3d3d3;
+    padding: 100px;
+    font-size: 50px;
+    border: 1px solid red;
+   }
+   @media(max-width: 600px){
+    .responsivo{
+        background-color: #a12;
+        font-size: 100px;
+        border: 5px solid blue;
+
+   }}
+   /* Animações */
+   .botao-transicao{
+    background-color: #123abc;
+    transition: 0.4s; /* tempo da transição */
+   }
+   .botao-transicao:hover{
+    background-color: #1ec965; /* cor do botão quando o mouse passa por cima */
+   }
+   .animacao{
+    width: 100px;
+    height: 100px;  
+    background-color: #ffdead;
+    animation: mover 5s infinite; /* animação que dura 5 segundos e se repete infinitamente */
+    position: relative; /* o elemento é posicionado em relação a sua posição original */
+    }
+   @keyframes mover{
+    0%{
+        left: 0;
+        background-color: #ffdead;
+    }
+    
+    50%{
+        left: 200px;
+        background-color: #adedff;
+    }
+    100%{
+        left: 0;
+        background-color: #ffdead;
+    }
+}
