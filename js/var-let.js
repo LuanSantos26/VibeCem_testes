@@ -1,7 +1,6 @@
-let nome;
-nome ='Luan';
+let nome = "Luan";
 console.log(nome);
-nome = "Santos"
+nome = "Santos";
 console.log(nome);
 
 // let nome = 'Feitosa' não podemos redeclarar variáveis com let
